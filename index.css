@@ -1,7 +1,68 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Comic Sans MS;
 }
+a{
+    color: #ffffff;
+}
+
+header {
+    width: 90%;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    font-weight: bolder;
+    color: white;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul li:hover {
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+nav ul li:last-child {
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+}
+nav ul li .login {
+    width: 35px;
+    height: 35px;
+}
+
 .item {
     display: none;
     width: 100%;
@@ -12,23 +73,25 @@
     overflow: hidden;
     background-color: var(--background);
 }
-.item .title{
+
+.item .title {
     font-size: 10rem;
     color: white;
     font-weight: bold;
-    font-family: Comic Sans MS;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.item .img-frutas{
+
+.item .img-frutas {
     width: 50%;
     z-index: 3;
     position: absolute;
     top: 0;
 }
-.item .img-refri{
+
+.item .img-refri {
     width: 600px;
     z-index: 2;
 
@@ -42,7 +105,9 @@
     display: block;
 
 }
-#prev, #next{
+
+#prev,
+#next {
     position: absolute;
     top: 50%;
     transform: translate(-50%);
@@ -57,23 +122,66 @@
     z-index: 4;
     border-radius: 50%;
 }
-#prev{
+
+#prev {
     left: 70px;
 }
-#next{
+
+#next {
     right: 30px;
 }
 
 @keyframes toActive {
-    from{
+    from {
         top: 100%;
         opacity: 0;
-    }    
+    }
+}
+@keyframes toActiveleft {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes toActiverigth {
+    from {
+        right: 100%;
+        opacity: 0;
+    }
 }
 
-.item .img-frutas{
+.item .img-frutas {
     animation: toActive 1s ease-in-out;
 }
-.item .img-refri{
+
+.item .img-refri {
     animation: toActive 2s ease-in-out;
+}
+
+.img-frute1 {
+   animation: toActiveleft 1.5s ease-in-out;
+}
+
+.img-frute2 {
+   animation: toActive 1.5s ease-in-out;
+}
+
+.img-frute3 {
+    animation: toActiverigth 1.5s ease-in-out;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2%;
+    z-index: 10;
+}
+footer p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    
 }

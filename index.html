@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev-Frute</title>
-    
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <header>
+        <div class="container-logo">
+            <img class="logo" src="assets/fruit-basket.png" alt="logo">
+            <h1>Dev-Fruit</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="pages/About/about.html">about</a></li>
+                <li>
+                    <a href="pages/Frutes/frutes.html">
+                        frutes
+                    </a>
+                </li>
+                <li>contact</li>
+                <li>blog</li>
+                <a href="pages/Auth/login/login.html">
+                    <li>
+                        <img class="login" src="assets/user (1).png" alt="login">
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="item active" style="--background: #EA3041;">
+        <div class="item" style="--background: #EA3041;">
             <div class="title">Morango</div>
             <img class="img-frutas" src="assets/fundo-morango.png" alt="morango">
             <img class="img-refri" src="assets/refri-morango.png" alt="refri">
         </div>
-        <div class="item" style="--background: #2D5643;">
+        <div class="item active" style="--background: #2D5643;">
             <div class="title">Abacate</div>
             <img class="img-frutas" src="assets/fundo-abacate.png" alt="abacate">
             <img class="img-refri" src="assets/refri-abacate.png" alt="refri">
@@ -24,15 +47,19 @@
         <div class="item hidden" style="--background: #E7A043;">
             <div class="title">Laranja</div>
             <img class="img-frutas" src="assets/fundo-laranja.png" alt="laranja">
-            <img class="img-refri" src="assets/refri-laranja.png" alt="refri">>
+            <img class="img-refri" src="assets/refri-laranja.png" alt="refri">
         </div>
         <div class="button-arrow">
-            <button id="prev"> < </button>
-            <button id="next"> > </button>
+            <button id="prev">
+                < </button>
+                    <button id="next"> > </button>
         </div>
 
     </main>
-    <script src="index.js" ></script>
+    <footer>
+        <p>Todos direitos reservados desenvolvido por Dav Magico @copy-2025</p>
+    </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
